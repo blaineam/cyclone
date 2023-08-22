@@ -29,4 +29,4 @@ COPY  --chmod=777 entrypoint.sh /entrypoint.sh
 
 ENTRYPOINT ["/entrypoint.sh"]
 
-CMD ["crond", "-f", "-l", "2"]
+CMD ["crond", "-f", "-l", "8"]
