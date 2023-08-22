@@ -9,12 +9,13 @@ ENV BWLIMIT=3M
 
 RUN apk update \
     && apk add \
-		htop \
-		tree \
-		vim \
-		bash \
-		git \
-		openssh-client \
+	flock \
+	htop \
+	tree \
+	vim \
+	bash \
+	git \
+	openssh-client \
         openssl \
         ca-certificates \
         fuse \
