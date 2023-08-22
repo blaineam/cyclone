@@ -25,7 +25,7 @@ RUN apk update \
     && mv /tmp/rclone-*-linux-${ARCH}/rclone /usr/bin \
     && rm -r /tmp/rclone*
 
-COPY entrypoint.sh /entrypoint.sh
+COPY  --chmod=777 entrypoint.sh /entrypoint.sh
 
 ENTRYPOINT ["/entrypoint.sh"]
 
