@@ -1,11 +1,12 @@
 FROM alpine
 
-LABEL Blaine Miller <blaine@blaineam.com>
+LABEL Blaine Miller <blaine@wemiller.com>
 
 ENV ARCH=amd64
+ENV PLAN=sync
 ENV TARGET=crypto:
 ENV SOURCE=/data
-ENV BWLIMIT=3M
+ENV BWLIMIT=125M
 
 RUN apk update \
     && apk add \
